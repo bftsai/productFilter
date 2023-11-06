@@ -1,4 +1,4 @@
-# 網頁切版直播班 ![Alt text](<assets/images/web-icon white.svg>)【 AI 虛擬陪伴 】  
+# 網頁切版直播班 ![Alt text](<assets/images/index/logo.png>)【 Travel Ticket 】  
 
 * [GitHub](https://github.com/bftsai/productFilter)  
 * [gh-pages](https://bftsai.github.io/productFilter/)  
