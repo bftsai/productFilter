@@ -78,24 +78,24 @@ const component={
         let str='';
         arr.forEach(item=>{
             if(item.remain===0){
-                str+=`<div class="col mb-lg-19">
+                str+=`<div class="col mb-19">
                 <div class="card rounded-1 position-relative h-100">
-                  <span class="position-absolute translate-middle-y rounded-end-2 bg-primary text-white py-lg-4 px-lg-10 fs-lg-7">
+                  <span class="position-absolute translate-middle-y rounded-end-2 bg-primary text-white py-2 py-lg-4 px-5 px-lg-10 fs-7">
                     ${item.location}
                   </span>
                   <div class="card-img-top" style="background: url(${item.picUrl}) center;height: 180px;background-size: cover;">
                   </div>
                   <div class="card-body position-relative p-lg-10">
                     <span class="position-absolute start-0 top-0 translate-middle-y bg-tertiary py-3 px-4 text-white">${item.star}</span>
-                    <h2 class="card-title fs-lg-5 pb-lg-2 border-bottom border-2 border-green71 mb-0">${item.title}</h2>
-                    <p class="card-text text-quaternary mt-lg-8">${item.content}</p>
+                    <h2 class="card-title fs-6 fs-lg-5 pt-2 pt-lg-0 pb-lg-2 border-bottom border-2 border-green71 mb-0">${item.title}</h2>
+                    <p class="card-text text-quaternary mt-4 mt-lg-8">${item.content}</p>
                   </div>
-                  <div class="card-footer bg-white border-0 pt-lg-1 px-lg-10 pb-lg-7 d-flex align-items-center justify-content-between fw-medium">
+                  <div class="card-footer bg-white border-0 pt-lg-1 px-lg-10 pb-8 pb-lg-7 d-flex align-items-center justify-content-between fw-medium">
                     <p class="d-flex align-items-center">
                       <i class="fa-solid fa-circle-exclamation me-3"></i>
                       限時搶購
                     </p>
-                    <p class="fs-lg-3 d-flex align-items-center">
+                    <p class="fs-5 fs-lg-3 d-flex align-items-center">
                       <span class="fs-6 me-2">${item.currency}</span>
                       $${item.price.toLocaleString()}
                     </p>
@@ -103,24 +103,24 @@ const component={
                 </div>
               </div>`;
             }else{
-                str+=`<div class="col mb-lg-19">
+                str+=`<div class="col mb-19">
                 <div class="card rounded-1 position-relative h-100">
-                  <span class="position-absolute translate-middle-y rounded-end-2 bg-primary text-white py-lg-4 px-lg-10 fs-lg-7">
+                  <span class="position-absolute translate-middle-y rounded-end-2 bg-primary text-white py-2 py-lg-4 px-5 px-lg-10 fs-7">
                     ${item.location}
                   </span>
                   <div class="card-img-top" style="background: url(${item.picUrl}) center;height: 180px;background-size: cover;">
                   </div>
                   <div class="card-body position-relative p-lg-10">
                     <span class="position-absolute start-0 top-0 translate-middle-y bg-tertiary py-3 px-4 text-white">${item.star}</span>
-                    <h2 class="card-title fs-lg-5 pb-lg-2 border-bottom border-2 border-green71 mb-0">${item.title}</h2>
-                    <p class="card-text text-quaternary mt-lg-8">${item.content}</p>
+                    <h2 class="card-title fs-6 fs-lg-5 pt-2 pt-lg-0 pb-lg-2 border-bottom border-2 border-green71 mb-0">${item.title}</h2>
+                    <p class="card-text text-quaternary mt-4 mt-lg-8">${item.content}</p>
                   </div>
-                  <div class="card-footer bg-white border-0 pt-lg-1 px-lg-10 pb-lg-7 d-flex align-items-center justify-content-between fw-medium">
+                  <div class="card-footer bg-white border-0 pt-lg-1 px-lg-10 pb-8 pb-lg-7 d-flex align-items-center justify-content-between fw-medium">
                     <p class="d-flex align-items-center">
                       <i class="fa-solid fa-circle-exclamation me-3"></i>
                       剩下最後 ${item.remain} 組
                     </p>
-                    <p class="fs-lg-3 d-flex align-items-center">
+                    <p class="fs-5 fs-lg-3 d-flex align-items-center">
                       <span class="fs-6 me-2">TWD</span>
                       $${item.price.toLocaleString()}
                     </p>
