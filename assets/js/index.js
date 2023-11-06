@@ -15,7 +15,7 @@ const component={
     data:[
         {
             title: '綠島自由行套裝行程',
-            picUrl: '../assets/images/index/travel_1.png',
+            picUrl: 'https://i.imgur.com/BrPYJ7a.png',
             location: '台北',
             currency: 'TWD',
             price: 1280,
@@ -25,7 +25,7 @@ const component={
         },
         {
             title: '清境高空觀景步道二日遊',
-            picUrl: '../assets/images/index/travel_2.png',
+            picUrl: 'https://i.imgur.com/ibnCmoJ.png',
             location: '台北',
             currency: 'TWD',
             price: 2580,
@@ -35,7 +35,7 @@ const component={
         },
         {
             title: '南庄度假村露營車二日遊',
-            picUrl: '../assets/images/index/travel_3.png',
+            picUrl: 'https://i.imgur.com/SVMu64X.png',
             location: '台中',
             currency: 'TWD',
             price: 2480,
@@ -45,7 +45,7 @@ const component={
         },
         {
             title: '山林悠遊雙人套票',
-            picUrl: '../assets/images/index/travel_4.png',
+            picUrl: 'https://i.imgur.com/US7fmoK.png',
             location: '台中',
             currency: 'TWD',
             price: 880,
@@ -55,7 +55,7 @@ const component={
         },
         {
             title: '漁樂碼頭釣魚體驗套票',
-            picUrl: '../assets/images/index/travel_5.png',
+            picUrl: 'https://i.imgur.com/L1XbQKx.png',
             location: '台中',
             currency: 'TWD',
             price: 1280,
@@ -65,7 +65,7 @@ const component={
         },
         {
             title: '熊森公園親子二日遊套票',
-            picUrl: '../assets/images/index/travel_6.png',
+            picUrl: 'https://i.imgur.com/8yucwVe.png',
             location: '高雄',
             currency: 'TWD',
             price: 2480,
