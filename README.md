@@ -1,48 +1,98 @@
-# 網頁切版直播班 Vite 範例
+# JS 直播班 ![Alt text](<assets/images/index/logo28.png>)【 Travel Ticket 】  
 
-## Node.js 版本
-  - 專案的 Node.js 版本需為 v16 以上
-  - 查看自己版本指令：`node -v`
+* [GitHub](https://github.com/bftsai/productFilter)  
+* [gh-pages](https://bftsai.github.io/productFilter/)  
 
+## 🕺&ensp;作者
+  - [BF Tsai](https://github.com/bftsai)  
 
-## 指令列表
-- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
-- `npm run dev` - 執行開發模式
-  - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
-    `http://localhost:5173/<專案名稱>/pages/index.html`
-- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm ru deploy` - 自動化部署
-
-## 資料夾結構
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - scss # SCSS 的樣式放置處
-
-  - layout # ejs 模板放置處
-  - pages # 頁面放置處
-
-- JavaScript 程式碼可寫在 main.js 檔案
-
-### 注意事項
-- 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
-- .gitignore 檔案是用來忽略掉不該上傳到 GitHub 的檔案（例如 node_modules），請不要移除 .gitignore
-
-## 開發模式的監聽
-vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
-
-
-## 部署 gh-pages 流程說明
-### Windows 版本
-1. 在 GitHub 建立一個新的 Repository
-
-2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
-```cmd
-git init # 若已經初始化過就可以不用輸入
-git add .
-git commit -m 'first commit'
-git branch -M main
-git remote add origin [GitHub Repositories Url]
-git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
+## 🖥&ensp;下載專案
+> clone 專案  
+```
+git clone https://github.com/bftsai/productFilter.git  
 ```
 
-3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+> 移至專案資料夾  
+```
+cd localFolder/productFilter  
+```
+
+> 安裝套件  
+```
+npm install  
+```
+
+> 啟動專案  
+```
+npm run dev  
+```
+
+## 📂&ensp;資料夾結構
+|-- assets  
+|&emsp;&emsp;&emsp;|-- images  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- index  
+|&emsp;&emsp;&emsp;|-- &emsp;&ensp;js  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- index.js   
+|&emsp;&emsp;&emsp;|-- scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- base  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _reboot.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _root.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- components  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _buttons.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- helpers  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _variables-dark.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _variables.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- layout  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _footer.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _header.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- mixin  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _mixin.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- pages  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _index.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- utils  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|&emsp;&emsp;|- _utilities.scss  
+|&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;|- all.scss  
+|-- layout  
+|&emsp;&emsp;&emsp;|-- footer.ejs  
+|&emsp;&emsp;&emsp;|-- header.ejs  
+|-- pages  
+|&emsp;&emsp;&emsp;|-- index.html  
+|-- .gitignore  
+|-- changelog.js.cjs  
+|-- main.js  
+|-- package-lock.json  
+|-- package.json  
+|-- README.md  
+|-- vite.config.js  
+
+## 🧑‍💻&ensp;前端
+![Static Badge](https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=fff&labelColor=2c2a2a)
+![Static Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&labelColor=2c2a2a)
+![Static Badge](https://img.shields.io/badge/SASS-CC6699?logo=sass&logoColor=fff&labelColor=2c2a2a)
+![Static Badge](https://img.shields.io/badge/Bootstrap_5-7952B3?logo=Bootstrap&logoColor=fff&labelColor=2c2a2a)
+![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?logo=javascript&labelColor=000)
+![NPM](https://img.shields.io/badge/NPM-CB3837?logo=npm&labelColor=000)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&labelColor=000)
+
+
+## 🎭&ensp;美術  
+![Figma](https://img.shields.io/badge/figma-F24E1E?logo=figma&labelColor=000)    
+
+## 🤝&ensp;協作  
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&labelColor=000)
+![GitHub](https://img.shields.io/badge/Github-181717?logo=github&labelColor=000)
+![Github Pages](https://img.shields.io/badge/Github%20pages-222222?logo=githubpages&labelColor=000)
+![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)  
+
+## ![Alt text](./assets/images/hexschool-icon.png)&ensp;六角學院協助架構
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)  
+### 特別感謝 - 作品指導  
+  - 六角學院 / 穎旻老師  
+    
+### 特別感謝 - 設計協作
+  - 六角學院 / 合作設計師  
+  - [設計稿](https://xd.adobe.com/view/868fdb37-d3f4-48bd-bdd9-8b2ae7963c9b-d3dc/)  
+
+## 🌄&ensp;圖片素材來源  
+- [GitHub](https://github.com/hexschool/2022-web-layout-training/tree/main/js_week5)  
+- [Font awesome](https://fontawesome.com)  

@@ -4,16 +4,159 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <!-- customer -->
+    <title>ProductFilter-index</title>
+    <link rel="shirt icon" href="../assets/images/index/logo28.png">
+    <meta name="description" content="Travel Ticket">
+    <meta name="keywords" content="Travel Ticket,Red,Tsai">
+    <meta property="og:title" content="Travel Ticket by Red Tsai">
+    <meta property="og:description" content="Travel Ticket by Red Tsai">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bftsai.github.io/productFilter/">
+    <meta property="og:image" content="blob:https://imgur.com/e208fe61-9556-4f8c-9d1e-63ab742a8b65">
+    <link rel="apple-touch-icon" href="../assets/images/index/logo28.png">
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+    <div class="index">
+      <div class="container mt-lg-30 mb-lg-29 py-lg-27 rounded-6">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 d-flex flex-column">
+            <img src="../assets/images/index/main_img.png" alt="">
+            <img src="../assets/images/index/Let’s Travel !.png" alt="">
+          </div>
+          <div class="col-lg-4">
+            <h1 class="fs-lg-5 pb-lg-2 border-bottom border-3 mb-lg-16"><i class="fa-solid fa-circle-plus me-lg-3"></i>新增旅遊套票</h1>
+            <form class="form  needs-validation" novalidate>
+              <div class="mb-lg-8 d-flex align-items-center">
+                <label for="productName" class="form-label fw-medium flex-shrink-0 me-lg-16">套票名稱</label>
+                <div class="d-flex flex-column w-100">
+                  <input type="text" class="form-control px-lg-6 py-lg-4 bg-input-bg" id="productName" placeholder="請填寫套票名稱" required>
+                  <div class="invalid-feedback">
+                    請填寫套票名稱
+                  </div>
+                </div>
+              </div>
+              <div class="mb-lg-8 d-flex align-items-center">
+                <label for="productPicUrl" class="form-label fw-medium flex-shrink-0 me-lg-16">圖片網址</label>
+                <div class="d-flex flex-column w-100">
+                  <input type="text" class="form-control px-lg-6 py-lg-4 bg-input-bg" id="productPicUrl" placeholder="請填寫圖片網址" required>
+                  <div class="invalid-feedback">
+                    請填寫圖片網址
+                  </div>
+                </div>
+              </div>
+              <div class="mb-lg-8 d-flex align-items-center">
+                <label for="productSelect" class="form-label fw-medium flex-shrink-0 me-lg-16">景點地區</label>
+                <div class="d-flex flex-column w-100">
+                  <select class="form-select productSelect" aria-label="Default select example" id="productSelect" required>
+                    <option selected>請選擇景點地區</option>
+                    <option value="台北">台北</option>
+                    <option value="台中">台中</option>
+                    <option value="高雄">高雄</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    請選擇景點地區
+                  </div>
+                </div>
+              </div>
+              <div class="mb-lg-8 d-flex align-items-center">
+                <label for="productPrice" class="form-label fw-medium flex-shrink-0 me-lg-16">套票金額</label>
+                <div class="d-flex flex-column w-100">
+                  <input type="number" class="form-control px-lg-6 py-lg-4 bg-input-bg" id="productPrice" placeholder="請填寫套票金額" required>
+                  <div class="invalid-feedback">
+                    請填寫套票金額
+                  </div>
+                </div>
+              </div>
+              <div class="mb-lg-8 d-flex align-items-center">
+                <label for="productRemain" class="form-label fw-medium flex-shrink-0 me-lg-16">套票組數</label>
+                <div class="d-flex flex-column w-100">
+                  <input type="number" class="form-control px-lg-6 py-lg-4 bg-input-bg" id="productRemain" placeholder="請填寫套票組數" required>
+                  <div class="invalid-feedback">
+                    請填寫套票組數
+                  </div>
+                </div>
+              </div>
+              <div class="mb-lg-8 d-flex align-items-center">
+                <label for="productStar" class="form-label fw-medium flex-shrink-0 me-lg-16">套票星級</label>
+                <div class="d-flex flex-column w-100">
+                  <input type="number" class="form-control px-lg-6 py-lg-4 bg-input-bg productStar" id="productStar" placeholder="請填寫套票星級" required>
+                  <div class="invalid-feedback">
+                    請填寫套票星級
+                  </div>
+                </div>
+              </div>
+              <div class="mb-lg-12 d-flex">
+                <label for="productDescribe" class="form-label fw-medium flex-shrink-0 me-lg-16">套票描述</label>
+                <div class="d-flex flex-column w-100">
+                  <textarea style="resize: none;" class="form-control px-lg-6 py-lg-4 bg-input-bg" rows="3" id="productDescribe" placeholder="請填寫套票描述（限100字）" required></textarea>
+                  <div class="invalid-feedback">
+                    請填寫套票描述（限100字）
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-tertiary rounded-7 submit py-lg-5 px-lg-20 fs-lg-7">
+                  新增套票
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="renderArea pt-lg-25 pb-lg-31">
+        <div class="container">
+          <div class="row align-items-center mb-lg-20">
+            <div class="col-3">
+              <select class="form-select areaSearch py-lg-4 px-lg-6" aria-label="Default select example">
+                <option value="地區搜尋" selected>地區搜尋</option>
+                <option value="全部地區">全部地區</option>
+                <option value="台北">台北</option>
+                <option value="台中">台中</option>
+                <option value="高雄">高雄</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <p class="filterResultP">本次搜尋共 6 筆資料</p>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-lg-3 renderCard">
+            <div class="col">
+              <div class="card rounded-1 position-relative mb-lg-13">
+                <span class="position-absolute translate-middle-y rounded-end-2 bg-primary text-white py-lg-4 px-lg-10 fs-lg-7">
+                  台北
+                </span>
+                <div class="card-img-top" style="background: url(../assets/images/index/travel_1.png) center;height: 180px;background-size: cover;">
+                </div>
+                <div class="card-body position-relative p-lg-10">
+                  <span class="position-absolute start-0 top-0 translate-middle-y bg-tertiary py-3 px-4 text-white">8.6</span>
+                  <h2 class="card-title fs-lg-5 pb-lg-2 border-bottom border-2 border-green71 mb-0">綠島自由行套裝行程</h2>
+                  <p class="card-text text-quaternary mt-lg-8">嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。</p>
+                </div>
+                <div class="card-footer bg-white border-0 pt-lg-1 px-lg-10 pb-lg-7 d-flex align-items-center justify-content-between fw-medium">
+                  <p class="d-flex align-items-center">
+                    <i class="fa-solid fa-circle-exclamation me-3"></i>
+                    剩下最後 8 組
+                  </p>
+                  <p class="fs-lg-3 d-flex align-items-center">
+                    <span class="fs-6 me-2">TWD</span>
+                    $1,280
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
-
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/index.js"></script>
   </body>
 </html>
