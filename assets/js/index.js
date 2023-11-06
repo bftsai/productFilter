@@ -243,7 +243,7 @@ function transformNumber(num){
 
       form.classList.add('was-validated');
 
-      document.getElementById('productSelect').setAttribute("style","background: url(../assets/images/index/caret-upDown.png) no-repeat 98% #FAFAFA;background-size: 10%;");
+      document.getElementById('productSelect').setAttribute("style","appearance:none ;-moz-appearance:none ;-webkit-appearance:none ;background: url(https://i.imgur.com/8BxTHjt.png) no-repeat 98% #FAFAFA;background-size: 10%;");
   }, false);
   });
 })();
