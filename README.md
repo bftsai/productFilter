@@ -1,4 +1,4 @@
-# 網頁切版直播班 ![Alt text](<assets/images/index/logo.png>)【 Travel Ticket 】  
+# JS 直播班 ![Alt text](<assets/images/index/logo28.pnglogo.png>)【 Travel Ticket 】  
 
 * [GitHub](https://github.com/bftsai/productFilter)  
 * [gh-pages](https://bftsai.github.io/productFilter/)  
