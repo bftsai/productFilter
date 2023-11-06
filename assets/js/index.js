@@ -165,7 +165,7 @@ const component={
 component.init(component.data);
 
 function transformNumber(num){
-    let comma=/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g;
+    let comma=new RegExp("\B(?<!\.\d*)(?=(\d{3})+(?!\d))","g");
     num=String(num).replace(comma, ',');
     return num;
 };
