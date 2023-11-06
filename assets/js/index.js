@@ -169,45 +169,85 @@ function transformNumber(num){
     num=String(num).replace(comma, ',');
     return `${num}`;
 };
-submit.addEventListener('click',e=>{
-    //e.preventDefault();
-    //bootstrap
-    (() => {
-        'use strict'
-    
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        const forms = document.querySelectorAll('.needs-validation')
-    
-        // Loop over them and prevent submission
-        Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-                if(document.getElementById('productSelect').value==='請選擇景點地區'){
-                    document.querySelector('.productSelect+.invalid-feedback').setAttribute("style","display: block;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
-                }
-            }else if(document.getElementById('productSelect').value==='請選擇景點地區'){
-                event.preventDefault();
-                event.stopPropagation();
-                document.querySelector('.productSelect+.invalid-feedback').setAttribute("style","display: block;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
-            }
-            else{
-                event.preventDefault();
-                event.stopPropagation();
-                document.querySelector('.productSelect+.invalid-feedback').setAttribute("style","display: none;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
-                let transformedPrice=transformNumber(productPrice.value);
+//bootstrap
+(() => {
+  'use strict'
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+  function checkStar(){
+    if(Number(productStar.value)===0){
+      document.querySelector('.productStar+.invalid-feedback').textContent=`請填寫套票星級`;
+      productStar.classList.add('is-invalid');
+      productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/invalid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+    }else if(!(Number(productStar.value)>=1&&Number(productStar.value)<=10)){
+      document.querySelector('.productStar+.invalid-feedback').textContent=`請輸入 1~10 分`;
+      productStar.classList.add('is-invalid');
+      productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/invalid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+    }
 
-                component.addData(transformedPrice);
-            }
-    
-            form.classList.add('was-validated');
+    productStar.addEventListener('keyup',e=>{
+      if(Number(productStar.value)!==0){
+        if(!(Number(productStar.value)>=1&&Number(productStar.value)<=10)){
+          document.querySelector('.productStar+.invalid-feedback').textContent=`請輸入 1~10 分`;
+          document.querySelector('.productStar+.invalid-feedback').setAttribute("style","display: block;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
+          productStar.classList.add('is-invalid');
+          productStar.classList.remove('is-valid');
+          productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/invalid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+        }else{
+          document.querySelector('.productStar+.invalid-feedback').setAttribute("style","display: none;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
+          productStar.classList.remove('is-invalid');
+          productStar.classList.add('is-valid');
+          productStar.setAttribute("style","border-color: var(--bs-form-valid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/valid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+        }
+      }else{
+          document.querySelector('.productStar+.invalid-feedback').textContent=`請填寫套票星級`;
+          document.querySelector('.productStar+.invalid-feedback').setAttribute("style","display: block;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
+          productStar.classList.add('is-invalid');
+          productStar.classList.remove('is-valid');
+          productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/invalid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+      }
+    })
+  }
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+  form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+          if(document.getElementById('productSelect').value==='請選擇景點地區'){
+              document.querySelector('.productSelect+.invalid-feedback').setAttribute("style","display: block;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
+          }
+          
+          checkStar();
+          
+      }else if(document.getElementById('productSelect').value==='請選擇景點地區'){
+          event.preventDefault();
+          event.stopPropagation();
+          document.querySelector('.productSelect+.invalid-feedback').setAttribute("style","display: block;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
+          
+          checkStar();
 
-            document.getElementById('productSelect').setAttribute("style","background: url(../assets/images/index/caret-upDown.png) no-repeat 98% #FAFAFA;background-size: 10%;");
-        }, false);
-        });
-    })();
-})
+      }else if(!(Number(productStar.value)>=1&&Number(productStar.value)<10)){
+        event.preventDefault();
+        event.stopPropagation();
+        
+        checkStar();
+
+      }else{
+          event.preventDefault();
+          event.stopPropagation();
+          document.querySelector('.productSelect+.invalid-feedback').setAttribute("style","display: none;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
+
+          component.addData();
+      }
+
+      form.classList.add('was-validated');
+
+      document.getElementById('productSelect').setAttribute("style","background: url(../assets/images/index/caret-upDown.png) no-repeat 98% #FAFAFA;background-size: 10%;");
+  }, false);
+  });
+})();
+
 areaSearch.addEventListener('change',e=>{
     component.filter(areaSearch.value);
 });
