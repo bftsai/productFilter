@@ -97,7 +97,7 @@ const component={
                     </p>
                     <p class="fs-lg-3 d-flex align-items-center">
                       <span class="fs-6 me-2">${item.currency}</span>
-                      $${item.price.toLocaleString()}
+                      $${transformNumber(item.price)}
                     </p>
                   </div>
                 </div>
