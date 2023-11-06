@@ -71,19 +71,20 @@ npm run dev
 ![Static Badge](https://img.shields.io/badge/SASS-CC6699?logo=sass&logoColor=fff&labelColor=2c2a2a)
 ![Static Badge](https://img.shields.io/badge/Bootstrap_5-7952B3?logo=Bootstrap&logoColor=fff&labelColor=2c2a2a)
 ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?logo=javascript&labelColor=000)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-CB3837?logo=npm&labelColor=000)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&labelColor=000)
+
 
 ## 🎭&ensp;美術  
-![Figma](https://img.shields.io/badge/figma-%23F24E1E?style=for-the-badge&logo=figma&logoColor=white)    
+![Figma](https://img.shields.io/badge/figma-F24E1E?logo=figma&labelColor=000)    
 
 ## 🤝&ensp;協作  
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
-![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)  
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&labelColor=000)
+![GitHub](https://img.shields.io/badge/Github-181717?logo=github&labelColor=000)
+![Github Pages](https://img.shields.io/badge/Github%20pages-222222?logo=githubpages&labelColor=000)
 ![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)  
 
-## ![Alt text](hexschool-logo.png)&ensp;六角學院協助架構
+## ![Alt text](./assets/images/hexschool-icon.png)&ensp;六角學院協助架構
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)  
 ### 特別感謝 - 作品指導  
   - 六角學院 / 穎旻老師  
