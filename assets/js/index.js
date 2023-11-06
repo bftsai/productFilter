@@ -178,11 +178,11 @@ function transformNumber(num){
     if(Number(productStar.value)===0){
       document.querySelector('.productStar+.invalid-feedback').textContent=`請填寫套票星級`;
       productStar.classList.add('is-invalid');
-      productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/invalid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+      productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('https://i.imgur.com/sjBnbp4.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
     }else if(!(Number(productStar.value)>=1&&Number(productStar.value)<=10)){
       document.querySelector('.productStar+.invalid-feedback').textContent=`請輸入 1~10 分`;
       productStar.classList.add('is-invalid');
-      productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/invalid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+      productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('https://i.imgur.com/sjBnbp4.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
     }
 
     productStar.addEventListener('keyup',e=>{
@@ -192,7 +192,7 @@ function transformNumber(num){
           document.querySelector('.productStar+.invalid-feedback').setAttribute("style","display: block;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
           productStar.classList.add('is-invalid');
           productStar.classList.remove('is-valid');
-          productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/invalid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+          productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('https://i.imgur.com/sjBnbp4.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
         }else{
           document.querySelector('.productStar+.invalid-feedback').setAttribute("style","display: none;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
           productStar.classList.remove('is-invalid');
@@ -204,7 +204,7 @@ function transformNumber(num){
           document.querySelector('.productStar+.invalid-feedback').setAttribute("style","display: block;width: 100%;margin-top: 0.25rem;font-size: 0.875em;color: var(--bs-form-invalid-color);");
           productStar.classList.add('is-invalid');
           productStar.classList.remove('is-valid');
-          productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('../assets/images/index/invalid.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
+          productStar.setAttribute("style","border-color: var(--bs-form-invalid-border-color);padding-right: calc(1.5em + 0.75rem);background-image: url('https://i.imgur.com/sjBnbp4.png');background-repeat: no-repeat;background-position: right calc(0.375em + 0.1875rem) center;background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);");
       }
     })
   }
