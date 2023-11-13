@@ -13,24 +13,24 @@
     <meta property="og:description" content="Travel Ticket by Red Tsai">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bftsai.github.io/productFilter/">
-    <meta property="og:image" content="blob:https://imgur.com/e208fe61-9556-4f8c-9d1e-63ab742a8b65">
+    <meta property="og:image" content="https://i.imgur.com/gZ1YzW5.png">
     <link rel="apple-touch-icon" href="../assets/images/index/logo28.png">
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <div class="index">
-      <div class="container mt-lg-30 mb-lg-29 py-lg-27 rounded-6">
+      <div class="container mt-27 mb-25 py-15 mt-lg-30 mb-lg-29 py-lg-27 rounded-6">
         <div class="row justify-content-center">
           <div class="col-lg-4 d-flex flex-column">
             <img src="../assets/images/index/main_img.png" alt="">
             <img src="../assets/images/index/Let’s Travel !.png" alt="">
           </div>
           <div class="col-lg-4">
-            <h1 class="fs-lg-5 pb-lg-2 border-bottom border-3 mb-lg-16"><i class="fa-solid fa-circle-plus me-lg-3"></i>新增旅遊套票</h1>
+            <h1 class="fs-5 pb-2 border-bottom border-3 mb-12 mb-lg-16"><i class="fa-solid fa-circle-plus me-3"></i>新增旅遊套票</h1>
             <form class="form  needs-validation" novalidate>
-              <div class="mb-lg-8 d-flex align-items-center">
-                <label for="productName" class="form-label fw-medium flex-shrink-0 me-lg-16">套票名稱</label>
+              <div class="mb-8 d-flex align-items-center">
+                <label for="productName" class="form-label fw-medium flex-shrink-0 me-8 me-lg-16">套票名稱</label>
                 <div class="d-flex flex-column w-100">
                   <input type="text" class="form-control px-lg-6 py-lg-4 bg-input-bg" id="productName" placeholder="請填寫套票名稱" required>
                   <div class="invalid-feedback">
@@ -38,8 +38,8 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-lg-8 d-flex align-items-center">
-                <label for="productPicUrl" class="form-label fw-medium flex-shrink-0 me-lg-16">圖片網址</label>
+              <div class="mb-8 d-flex align-items-center">
+                <label for="productPicUrl" class="form-label fw-medium flex-shrink-0 me-8 me-lg-16">圖片網址</label>
                 <div class="d-flex flex-column w-100">
                   <input type="text" class="form-control px-lg-6 py-lg-4 bg-input-bg" id="productPicUrl" placeholder="請填寫圖片網址" required>
                   <div class="invalid-feedback">
@@ -47,11 +47,11 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-lg-8 d-flex align-items-center">
-                <label for="productSelect" class="form-label fw-medium flex-shrink-0 me-lg-16">景點地區</label>
+              <div class="mb-8 d-flex align-items-center">
+                <label for="productSelect" class="form-label fw-medium flex-shrink-0 me-8 me-lg-16">景點地區</label>
                 <div class="d-flex flex-column w-100">
                   <select class="form-select productSelect" aria-label="Default select example" id="productSelect" required>
-                    <option selected>請選擇景點地區</option>
+                    <option selected disabled value="">請選擇景點地區</option>
                     <option value="台北">台北</option>
                     <option value="台中">台中</option>
                     <option value="高雄">高雄</option>
@@ -61,8 +61,8 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-lg-8 d-flex align-items-center">
-                <label for="productPrice" class="form-label fw-medium flex-shrink-0 me-lg-16">套票金額</label>
+              <div class="mb-8 d-flex align-items-center">
+                <label for="productPrice" class="form-label fw-medium flex-shrink-0 me-8 me-lg-16">套票金額</label>
                 <div class="d-flex flex-column w-100">
                   <input type="number" class="form-control px-lg-6 py-lg-4 bg-input-bg" id="productPrice" placeholder="請填寫套票金額" required>
                   <div class="invalid-feedback">
@@ -70,8 +70,8 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-lg-8 d-flex align-items-center">
-                <label for="productRemain" class="form-label fw-medium flex-shrink-0 me-lg-16">套票組數</label>
+              <div class="mb-8 d-flex align-items-center">
+                <label for="productRemain" class="form-label fw-medium flex-shrink-0 me-8 me-lg-16">套票組數</label>
                 <div class="d-flex flex-column w-100">
                   <input type="number" class="form-control px-lg-6 py-lg-4 bg-input-bg" id="productRemain" placeholder="請填寫套票組數" required>
                   <div class="invalid-feedback">
@@ -79,17 +79,17 @@
                   </div>
                 </div>
               </div>
-              <div class="mb-lg-8 d-flex align-items-center">
-                <label for="productStar" class="form-label fw-medium flex-shrink-0 me-lg-16">套票星級</label>
+              <div class="mb-8 d-flex align-items-center">
+                <label for="productStar" class="form-label fw-medium flex-shrink-0 me-8 me-lg-16">套票星級</label>
                 <div class="d-flex flex-column w-100">
-                  <input type="number" class="form-control px-lg-6 py-lg-4 bg-input-bg productStar" id="productStar" placeholder="請填寫套票星級" required>
+                  <input type="number" step="0.01" class="form-control px-lg-6 py-lg-4 bg-input-bg productStar" id="productStar" placeholder="請填寫套票星級" required>
                   <div class="invalid-feedback">
                     請填寫套票星級
                   </div>
                 </div>
               </div>
-              <div class="mb-lg-12 d-flex">
-                <label for="productDescribe" class="form-label fw-medium flex-shrink-0 me-lg-16">套票描述</label>
+              <div class="mb-12 d-flex">
+                <label for="productDescribe" class="form-label fw-medium flex-shrink-0 me-8 me-lg-16">套票描述</label>
                 <div class="d-flex flex-column w-100">
                   <textarea style="resize: none;" class="form-control px-lg-6 py-lg-4 bg-input-bg" rows="3" id="productDescribe" placeholder="請填寫套票描述（限100字）" required></textarea>
                   <div class="invalid-feedback">
@@ -109,21 +109,24 @@
 
       <div class="renderArea pt-lg-25 pb-lg-31">
         <div class="container">
-          <div class="row align-items-center mb-lg-20">
-            <div class="col-3">
+          <div class="row align-items-center mb-16 mb-lg-20">
+            <div class="col-6 col-lg-3">
               <select class="form-select areaSearch py-lg-4 px-lg-6" aria-label="Default select example">
-                <option value="地區搜尋" selected>地區搜尋</option>
+                <option value="" disabled selected>地區搜尋</option>
                 <option value="全部地區">全部地區</option>
                 <option value="台北">台北</option>
+                <option value="桃園">桃園</option>
+                <option value="新竹">新竹</option>
                 <option value="台中">台中</option>
+                <option value="台南">台南</option>
                 <option value="高雄">高雄</option>
               </select>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-lg-3">
               <p class="filterResultP">本次搜尋共 6 筆資料</p>
             </div>
           </div>
-          <div class="row row-cols-1 row-cols-lg-3 renderCard">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 renderCard">
             <div class="col">
               <div class="card rounded-1 position-relative mb-lg-13">
                 <span class="position-absolute translate-middle-y rounded-end-2 bg-primary text-white py-lg-4 px-lg-10 fs-lg-7">
@@ -152,11 +155,14 @@
         </div>
       </div>
     </div>
-
+    
     <%- include('./layout/footer'); -%>
+    <!-- AXIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/96a7520586.js" crossorigin="anonymous"></script>
     <script type="module" src="../main.js"></script>
-    <script type="module" src="../assets/js/index.js"></script>
+    <!-- <script type="module" src="../assets/js/index.js"></script> -->
+    <script src="../assets/js/test.js"></script>
   </body>
 </html>

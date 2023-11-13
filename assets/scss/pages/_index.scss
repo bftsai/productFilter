@@ -1,26 +1,44 @@
-
+.index{
+  &>.container{
+    box-shadow: 0px 3px 6px #00000029;
+  }
+  .input{
+    background: padding-box;
+  }
+  .form-select{
+    appearance:none ;
+    -moz-appearance:none ;
+    -webkit-appearance:none ;
+    background: url(../images/index/caret-upDown.png) no-repeat 98% #FAFAFA;
+    background-size: 10%;
+  }
+}
 @include lg{
   .index{
-    &>.container{
-      box-shadow: 0px 3px 6px #00000029;
-    }
     img{
       width: 350px;
-    }
-    .input{
-      background: padding-box;
     }
     .form-select{
       appearance:none ;
       -moz-appearance:none ;
       -webkit-appearance:none ;
       background: url(../images/index/caret-upDown.png) no-repeat 98% #FAFAFA;
-      background-size: 10%;
+      background-size: 5%;
+      &:hover{
+        cursor: pointer;
+      }
     }
     .renderArea{
       background: #F7F7F7;
       .card{
         box-shadow: 0px 3px 6px #00000029;
+        &:hover{
+          cursor: pointer;
+          box-shadow: 0px 3px 18px #00000029;
+          .card-img-top{
+            background-size: 120% !important;
+          }
+        }
       }
     }
   }
