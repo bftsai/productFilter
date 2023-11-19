@@ -37,6 +37,51 @@ const component={
         }
     },
     render(arr){
+        let obj={};
+        this.data.forEach(item=>{
+          if(obj[item.area]===undefined){
+            obj[item.area]=1;
+          }else{
+            obj[item.area]++;
+          }
+        });
+        let areaCount=[];
+        const area=Object.keys(obj);
+        area.forEach((item,index)=>{
+          areaCount.push([item,(Object.values(obj))[index]]);
+        });
+        let areaColor={},i=0,colorArr=['#5151D3','#26C0C7','#E68618'];
+        area.forEach((item,index)=>{
+          areaColor[item]=colorArr[index];
+        });
+        
+        const chart = c3.generate({
+            bindto: '#chart',
+            data: {
+                columns: areaCount,
+                type : 'donut',
+                colors: areaColor,
+                onclick: function (d, i) { console.log("onclick", d, i); },
+                onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+                onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+            },
+            donut: {
+                title: "套票地區比重",
+                width: 15,
+                label: {
+                  show: false,
+                  expand: false
+                }
+            },
+            axis: {
+              x: {
+                label: {
+                  text: '台北',
+                  position: 'outer-left'
+                }
+              }
+            }
+        });
         let str='';
         arr.forEach(item=>{
             str+=`<div class="col mb-19">
@@ -175,7 +220,7 @@ function transformNumber(num){
           
           checkStar();
           
-      }else if(!(Number(productStar.value)>=1&&Number(productStar.value)<10)){
+      }else if(!(Number(productStar.value)>=1&&Number(productStar.value)<=10)){
           form.classList.add('was-validated');  
         
           checkStar();
